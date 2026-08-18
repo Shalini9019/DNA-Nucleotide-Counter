@@ -1,126 +1,36 @@
-\# DNA Nucleotide Counter
+# DNA Nucleotide Counter
 
+A beginner-friendly Python project for analyzing a DNA sequence.
 
+## Project Description
 
-A beginner bioinformatics project written in Python to count the nucleotides A, T, G, and C in a DNA sequence.
+This project reads a DNA sequence from a FASTA file and counts the number of each nucleotide: A, T, G, and C.
 
+The project also calculates the GC content of the DNA sequence and visualizes nucleotide counts using a bar chart.
 
+## Files
 
-\## Data Source
+- `dna_counter.py` - Python program for DNA sequence analysis
+- `sequence.fasta` - DNA sequence in FASTA format
+- `DNA_Nucleotide_Counter.ipynb` - Google Colab notebook containing the analysis
 
+## Results
 
+For the sequence used in this project:
 
-The DNA sequence used in this project was obtained from NCBI in FASTA format.
+- A: 1739
+- T: 1743
+- G: 2004
+- C: 1991
+- Sequence length: 7477
+- GC Content: 53.43%
 
+## How to Run
 
-
-\- Organism: \*Escherichia coli\*
-
-\- NCBI accession: J01636.1
-
-\- Description: \*E. coli\* lactose operon with lacI, lacZ, lacY and lacA genes
-
-\- Sequence length: 7,477 nucleotides
-
-
-
-\## Results
-
-
-
-The Python script counted each nucleotide in the 7,477-nucleotide DNA sequence.
-
-
-
-| Nucleotide | Count |
-
-|------------|------:|
-
-| A | 1,739 |
-
-| T | 1,743 |
-
-| G | 2,004 |
-
-| C | 1,991 |
-
-| \*\*Total\*\* | \*\*7,477\*\* |
-
-
-
-The sum of A, T, G, and C equals the total sequence length, confirming that the nucleotide counts are consistent.
-
-
-
-\## How It Works
-
-
-
-The program:
-
-
-
-1\. Opens the FASTA file containing the DNA sequence.
-
-2\. Reads the sequence into Python.
-
-3\. Removes the FASTA header.
-
-4\. Removes line breaks from the DNA sequence.
-
-5\. Counts the occurrences of A, T, G, and C.
-
-6\. Calculates the total sequence length.
-
-7\. Checks that the nucleotide counts add up to the total length.
-
-
-
-\## Requirements
-
-
-
-\- Python 3
-
-\- A computer with a terminal or PowerShell
-
-
-
-\## How to Run
-
-
-
-1\. Download or clone this repository.
-
-2\. Make sure `dna\_counter.py` and `sequence.fasta` are in the same folder.
-
-3\. Open PowerShell or a terminal in the project folder.
-
-4\. Run:
-
-
+1. Download or clone this repository.
+2. Make sure `dna_counter.py` and `sequence.fasta` are in the same folder.
+3. Open PowerShell or a terminal in the project folder.
+4. Run:
 
 ```bash
-
-python dna\_counter.py
-
-
-
-\## Skills Used
-
-
-
-\- Python programming
-
-\- Reading FASTA files
-
-\- DNA sequence processing
-
-\- String manipulation
-
-\- Nucleotide counting
-
-\- Basic data validation
-
-\- Introduction to bioinformatics
-
+python dna_counter.py
